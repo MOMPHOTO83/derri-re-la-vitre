@@ -445,12 +445,37 @@ footer{padding:7vh 4%;text-align:center;color:#999;letter-spacing:.12em} a{color
         ses 161 portraits et la volonté de faire parler des violences
         domestiques particulièrement présentes durant les confinements.
       </p>
-      <p><em>Article de Djamel Mezine.</em></p><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-top:25px;">
-  <img src="received_279937187467272-01.jpeg" alt="Article La Voix du Nord - Derrière la vitre" style="width:100%;height:auto;">
-  <img src="received_392228955890330-01.jpeg" alt="Article La Voix du Nord - Derrière la vitre" style="width:100%;height:auto;">
-  <img src="received_548618376236268-01.jpeg" alt="Article La Voix du Nord - Derrière la vitre" style="width:100%;height:auto;">
-  <img src="received_555913192165910-01.jpeg" alt="Article La Voix du Nord - Derrière la vitre" style="width:100%;height:auto;">
-  <img src="received_1290791928028739-01.jpeg" alt="Article La Voix du Nord - Derrière la vitre" style="width:100%;height:auto;">
+      <p><em>Article de Djamel Mezine.</em></p><div style="margin-top:25px;text-align:center;">
+  <img src="received_279937187467272-01.jpeg"
+       alt="Article La Voix du Nord - Derrière la vitre"
+       style="width:100%;max-width:420px;height:auto;cursor:pointer;border:1px solid #555;"
+       onclick="document.getElementById('article-vdn').style.display='block'">
+
+  <p style="margin-top:15px;">
+    <button onclick="document.getElementById('article-vdn').style.display='block'"
+            style="padding:12px 20px;cursor:pointer;font-size:16px;">
+      Lire l'article complet
+    </button>
+  </p>
+</div>
+
+<div id="article-vdn"
+     style="display:none;position:fixed;z-index:9999;left:0;top:0;width:100%;height:100%;overflow:auto;background:rgba(0,0,0,.95);padding:30px 10px;">
+
+  <div style="max-width:800px;margin:auto;text-align:center;">
+
+    <button onclick="document.getElementById('article-vdn').style.display='none'"
+            style="position:sticky;top:10px;padding:12px 20px;font-size:16px;cursor:pointer;margin-bottom:20px;">
+      ✕ Fermer l'article
+    </button>
+
+    <img src="received_279937187467272-01.jpeg" style="width:100%;height:auto;display:block;margin-bottom:10px;">
+    <img src="received_392228955890330-01.jpeg" style="width:100%;height:auto;display:block;margin-bottom:10px;">
+    <img src="received_548618376236268-01.jpeg" style="width:100%;height:auto;display:block;margin-bottom:10px;">
+    <img src="received_555913192165910-01.jpeg" style="width:100%;height:auto;display:block;margin-bottom:10px;">
+    <img src="received_1290791928028739-01.jpeg" style="width:100%;height:auto;display:block;margin-bottom:30px;">
+
+  </div>
 </div>
     </article>
 
